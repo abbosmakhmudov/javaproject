@@ -1,0 +1,28 @@
+package class12;
+
+import java.util.Scanner;
+
+public class E1Methods {
+    public static void main(String[] args) {
+        // we are creating the object of Scanner class
+
+        // using the scanner object we are calling the nextInt Method.
+        takeUserInput();
+        System.out.println("Please enter details again");
+        takeUserInput();
+
+
+    }
+    static void takeUserInput(){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Please, enter your name");
+        String name=scan.nextLine();
+        System.out.println("Please, enter your age");
+        int age=scan.nextInt();
+        System.out.println("Your name is "+name+" and you are "+age+" years old");
+
+    }
+
+}
+
+
